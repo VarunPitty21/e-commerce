@@ -1,0 +1,115 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #423f3f;
+    text-align: center;
+}
+
+#modal{
+    display: none;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    color: black;
+    width: 500%;
+    max-width: 80%;
+    height: 300px;
+    -moz-box-shadow: 10px 10px 16px #000000;
+    -webkit-box-shadow: 10px 10px 16px #000000;
+    box-shadow: 10px 10px 16px #000000;
+}
+
+.product{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 30px 10px 30px;
+    background-color : whitesmoke;
+    border-radius: 20px;   
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.productImg{
+    width: 200px;
+    height: 200px;
+}
+
+.product h3{
+    float: right;
+    margin-left: 30px;
+    margin-top: 80px;
+    font-size: 50px;
+}
+
+.userBtn button{
+    margin: 30px;
+    padding: 15px;
+}
+
+#container{
+    background-color: black;
+    color: rgb(194, 194, 51);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+h1{
+    margin: 0px;
+}
+
+#container button{
+    background-color: rgb(194, 194, 51);
+    padding: 10px;
+    border: 1px solid rgb(128, 128, 42);
+    border-radius: 5px;
+    
+}
+#prodile{
+    display: flex;
+}
+
+#prodile h1{
+    padding: 10px;
+}
+#prodile img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+#loadMore{
+    background-color: rgb(194, 194, 51);
+    padding: 10px;
+    border: 1px solid rgb(128, 128, 42);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.removeFromCart{
+    background-color: rgb(192, 34, 34);
+}
+
+.internal{
+    font-size: 20px;
+}
+
+.internal button{
+    padding: 10px;
+}
+
+button{
+    background-color: rgb(194, 194, 51);
+    padding: 10px;
+    border: 1px solid rgb(128, 128, 42);
+    border-radius: 5px; 
+}

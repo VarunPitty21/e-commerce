@@ -1,0 +1,20 @@
+
+<link rel="stylesheet" href="/loginStyle.css">
+
+<div id="container">
+
+    <form action="/login" method="post" >
+
+        <input type="text" name="username" placeholder="Enter your username" required><br>
+        <input type="password" name="password" placeholder="Enter your password" required><br>
+        <button type="submit">Login</button>
+
+    </form>
+
+    <a href="/forgotPassword">Forgot Password?</a>
+
+</div>
+
+<% if(error.length>0) {%>
+    <h5 id="error"><%=error%></h5>
+<% } %>

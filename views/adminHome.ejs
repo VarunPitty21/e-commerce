@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E - commerce</title>
+    <link rel="stylesheet" href="home.css"/>
+</head>
+<body>
+    
+   <%- include('./partials/header.ejs',{username : username , profile_picture : profile_picture}) %>
+
+
+   <div id="modal">
+       <div id="upper" ><button id="close">X</button></div>
+       <img src="" alt="Product Image" class="productImg">
+       <h3></h3>
+       <p></p>
+   </div>
+   <div>
+       <div id="productContainer">
+           <% for(var i=0;i<length;i++) { %>
+               <div class = "product" id="<%=product[i]._id%>">
+                   <img src="<%=product[i].img%>" class="productImg">  </img>
+                   <h3> <%=product[i].title%>  </h3>
+                   <p class="stock">Stocks left : <%=product[i].stock%></p>
+                   <div style="display: grid;">
+                    <button class="viewDetails">View Details</button>
+                    <button class="editProduct">Edit Product</button>
+                    <button class="deleteProduct">Delete Product</button>
+                   </div>
+                   
+               </div>
+           <%}%>
+       </div>
+   
+       <div id="overlay"></div>
+   </div>
+   
+   <button id="loadMore">Load More</button>
+   <script src="/home.js"></script>
+   <script src = "/adminHome.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+    <a href="/"><button>Back To home</button></a>
+    <% if(products.length==0){ %>
+        <h1>Your Cart is Empty</h1>
+    <%} else {%>
+        <div id="productContainer">
+            <% for(var i=0;i<products.length ; i++){ %>
+                <div class = "product" id="<%=products[i].product_id%>">
+                    <img src="<%=products[i].img%>" class="productImg">  </img>
+                    <h3> <%=products[i].title%>  </h3>
+                    <div class="internal">
+                        <h5>Quantity</h5>
+                        <h5 ><%=products[i].quantity%> </h5>
+                        <button class="decrease">-</button>
+                        <button class="increase">+</button>
+                    </div>
+                    <button class="removeFromCart">Remove from Cart</button>
+                </div>
+            <% } %>
+        </div>
+        
+    <%}%>
+
+    <%if(error){%>
+        <h5><%=error%></h5>
+    <%}%>
+    <script src="/cart.js"></script>
+</body>
+</html>

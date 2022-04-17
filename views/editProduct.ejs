@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/editProduct.css">
+
+<div id="productContainer">
+    <div class = "product" id="<%=product._id%>">
+        <img src="/<%=product.img%>" class="productImg" height="200px" width="200px"></img>
+        <form action="/productUpdate/<%=product_id%>" method="post">
+
+            <label for="">Title : <input type="text" name = "title" id="title" value="<%=product.title%>" required></label><br>
+            <label for="">description :<input type="text" name="description" id="description" value="<%=product.description%>" required> </label><br>
+            <label for="">Stock : <input type="text" name="stock" id="stock" value="<%=product.stock%>" required></label><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+    </div>
+</div>
+
+<%if(error!=""){%>
+    <h id="error">
+        <%=error%>
+    </h3>
+    <%}%>

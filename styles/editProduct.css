@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #423f3f;
+}
+
+#productContainer{
+    background-color: black;
+    color: white;
+    width : 33%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 450px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+#productContainer button,img,input{
+    padding: 5px;
+    margin: 10px;
+}
+
+button{
+    background-color: rgb(194, 194, 51);
+    border-radius: 5px;
+    border: 1px solid rgb(128, 128, 42);
+}
+
+#error{
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+    color: black;
+}
